@@ -126,6 +126,7 @@ const WordPressLab = () => {
 
   return (
     <section 
+      id="wordpress-lab"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className="py-24 relative overflow-hidden bg-bg-secondary/30"

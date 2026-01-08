@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 
@@ -28,12 +27,19 @@ const Navbar = () => {
           </Link>
 
           {/* Hamburger Button */}
+          {/* Developer Menu Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="relative z-50 p-2 text-white hover:text-accent transition-colors"
+            className="relative z-50 group p-2"
             aria-label="Toggle Menu"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            <div className="font-mono text-xl font-bold flex items-center gap-1">
+              <span className="text-blue-500">{isOpen ? '(' : '{'}</span>
+              <span className="text-white group-hover:text-accent transition-colors">
+                {isOpen ? ' x ' : '...'}
+              </span>
+              <span className="text-blue-500">{isOpen ? ')' : '}'}</span>
+            </div>
           </button>
         </div>
       </nav>

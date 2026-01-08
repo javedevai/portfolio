@@ -7,6 +7,7 @@ import Experience from './components/Experience/Experience';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Layout/Footer';
 import Navbar from './components/Layout/Navbar';
+import ScrollPipeline from './components/Layout/ScrollPipeline';
 import Sidebar from './components/Layout/Sidebar';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
@@ -28,6 +29,7 @@ function App() {
   return (
     <div className="min-h-screen font-sans antialiased relative">
       <CustomCursor />
+      <ScrollPipeline />
       <CodeMagicBackground />
       <Navbar className="relative z-10" />
       <Sidebar className="relative z-10" />
